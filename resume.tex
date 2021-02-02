@@ -1,0 +1,160 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://jsonballadares.com/}{\Large Jason Balladares}} & Email : \href{mailto:jsonballadares@gmail.com}{jsonballadares@gmail.com}\\
+  \href{http://jsonballadares.com/}{http://www.jsonballadares.com} & Mobile : 786-720-1701 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Florida International University}{Miami, FL}
+      {Bachelor of Science in Computer Science, Honors College;  GPA: 3.42}{Aug. 2018 -- Dec. 2021}
+    \resumeSubheading
+      {Miami Dade College}{Miami, FL}
+      {Associate in Arts in Computer Science;  GPA: 3.9}{Aug. 2016 -- July. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Accelirate}{Miami, FL}
+      {L2 Automation Engineer}{Oct 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Document Processing}
+          {Architected and engineered generic software systems to automate end to end business process's involving the large scale ingestion of various documents using ML Models, OCR, NoSQL, AWS, UiPath AiFabric, Orchestrator API's and Scalyr. These process's on average created 6-figure ROI's for our clients in the and process thousands of documents per day running with various components running 24/7.}
+          \resumeItem{Text To PDF}
+          {Created a .Net package to convert UTF-8 text, extracted from email bodies, which represented invoices using no external API's. This was used on hundreds of thousands production emails in order to create viable input for invoice processing along with creating a better user experience for validation and generating more accurate retraining data.}
+        \resumeItem{Automation Research}
+          {Conducted research on the latest emerging automation technologies in order to facilitate the creation of bleeding edge solutions. Created POC's, use cases/analysis, and presentations in order to discuss viability, strategies, and standards to be applied firm wide with the leadership/management team.}
+        \resumeItem{Team Lead}
+          {Managing a group of 10 engineers in order to bring them up to speed and answer any questions in regards to client software needs specifically related to document processing. There is a weekly stand up I facilitate where they provide status updates on their various Microsoft teams tasks and I act as a scrum master providing help wherever needed.}
+        \resumeItem{Seminar Host}
+          {Host of multiple client and internal facing seminar sessions. These sessions where streamed to live and involved discussing either a successful client implementation in a presentation format or some technical solution explained internally to further internal knowledge. Topics discussed during these sessions where OCR Security, Intelligent Document Processing, and Generic Solution Discussions}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Miami Dade College}{Miami, FL}
+      {Software Engineer}{June 2018 - Oct 2019}
+      \resumeItemListStart
+        \resumeItem{MDChem}
+          {Lead Engineer for creating the front end of the MDC chemistry department mobile app. The app was made using Unity and the MERN stack; the app consisted of mini-games which where user stories/requirements described by the department head and acted as a fun way to engage students. The back-end allowed for multiple schools to distribute the app and monitor student progress along with normal administrative functions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Academic Success Initiative}{Miami, FL}
+      {Computer Science Tutor}{Oct 2018 - Oct 2019}
+      \resumeItemListStart
+        \resumeItem{Peer Tutor}
+          {Tutored various FIU courses such as Programming 1-3, Data Structures, and Algorithm Techniques.}
+        \resumeItem{Website Developer}
+          {Helped extend and maintain the pre-existing Django website which acted as a portal for signing up for sessions. I created a REST API which I used to automate the task of generating various statistical reports which prior where generated using SQL statements.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{MeetTwoEat}
+      {Android app for finding places to meet up and eat at between you and another friend using your locations. Was created using Android Studio and Google Place's API's.}
+    \resumeSubItem{Memer}
+      {A cli application/helper that listens to your requests and process's it using Google Clouds Voice Recognition API's and Imgur API's in order to display what you requested as ASCII art.}
+    \resumeSubItem{VVSC}
+      {A webapp created for a friend who coaches power lifters. It is his personal website which his students can use to get their meal/training plans, view milestones, and communicate with him. It was original developed using Flask and MySQL.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, Python, Javascript, C\#}
+     \hfill
+     \textbf{Technologies}{: Spring, Hibernate, JUnit, Mockito, Selenium}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
